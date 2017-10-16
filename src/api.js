@@ -244,8 +244,8 @@ class LineAPI {
     return await this._client.getGroup(groupId);
   }
 
-  _leaveGroup(gid) {
-    return this._client.leaveGroup(0,gid);
+  _leaveGroup(group) {
+    return this._client.leaveGroup(0,group);
   }
   
   async _reissueGroupTicket(groupId) {
